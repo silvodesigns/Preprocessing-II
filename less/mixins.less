@@ -1,1 +1,15 @@
 // Mixins in here
+
+.create-btn(@bg-color;@text-color;@width;){
+    background-color:@bg-color;
+    color:@text-color;
+    width: @width;
+    border-radius:15px;
+    padding:10px;
+    font-size:12px;
+    text-align:center;
+}
+
+.btn {
+    .create-btn(green;white;100%;);
+}
